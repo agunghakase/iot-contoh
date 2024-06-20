@@ -90,7 +90,7 @@ void loop() {
   // MASUKAN SESUAI PORT Jika port 3 maka readDHT(3)
   // setelah dapat data save ke db dengan koneksi ke API-URL
   // misal: 192.168.1.12/api/save/{temperature}/{humidiy}
-  url = "192.168.1.12/api/save/" + data.temperature + "/"+data.humidity;
+  url = "192.168.1.12:8080/api/save/" + data.temperature + "/"+data.humidity;
   saveData(url)
 
   delay(2000);  // Setiap 2 detik mengirim data ke API
